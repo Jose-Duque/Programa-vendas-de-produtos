@@ -19,7 +19,7 @@ namespace Vendas.Entities
 
         public override string PriceTag()
         {
-            return base.PriceTag() + "(Used) (Manufacture date: " + ManufactureDate.ToString("dd/MM/yyyy") +")";
+            return Name + "(Used) $ " + Price + "(Manufacture date: " + ManufactureDate.ToString("dd/MM/yyyy") +")";
         }
     }
 }

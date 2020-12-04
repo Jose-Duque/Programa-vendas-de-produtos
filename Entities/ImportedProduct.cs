@@ -22,7 +22,7 @@ namespace Vendas.Entities
 
         public override string PriceTag()
         {
-            return base.PriceTag() + TotalPrice().ToString("F2") + " (CustomsFee fee: $ " + CustomsFee.ToString("F2") +")";
+            return Name + TotalPrice().ToString("F2") + " (CustomsFee fee: $ " + CustomsFee.ToString("F2") +")";
         }
 
     }
